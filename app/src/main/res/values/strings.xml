@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">SCalc</string>
     <string name="action_settings">Settings</string>
+    <string name="edit_message">enter text here</string>
+    <string name="button_send">Send</string>
+    <string name="title_activity_display_message">My Message</string>
+    <string name="title_activity_calculator">CalculatorActivity</string>
+    <string name="amount">Amount</string>
+    <string name="calculate_button">Calculate</string>
+    <string name="calculator_percentage">percentage</string>
+    <string name="menuCalcButton">Calculator</string>
+    <string name="menuDisplayMsgBtn">Display Message</string>
 </resources>
