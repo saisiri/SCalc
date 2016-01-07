@@ -6,7 +6,7 @@
     <string name="title_activity_display_message">My Message</string>
     <string name="title_activity_calculator">CalculatorActivity</string>
     <string name="operand1">Operand1</string>
-    <string name="calculate__percent_button">Calculate Percentage</string>
+    <string name="calculate_percent_button">Get Percentage</string>
     <string name="operand2">Operand2</string>
     <string name="menuCalcButton">Calculator</string>
     <string name="menuDisplayMsgBtn">Display Message</string>
