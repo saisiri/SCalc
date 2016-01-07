@@ -5,9 +5,9 @@
     <string name="button_send">Send</string>
     <string name="title_activity_display_message">My Message</string>
     <string name="title_activity_calculator">CalculatorActivity</string>
-    <string name="amount">Amount</string>
-    <string name="calculate_button">Calculate</string>
-    <string name="calculator_percentage">percentage</string>
+    <string name="operand1">Operand1</string>
+    <string name="calculate__percent_button">Calculate Percentage</string>
+    <string name="operand2">Operand2</string>
     <string name="menuCalcButton">Calculator</string>
     <string name="menuDisplayMsgBtn">Display Message</string>
 </resources>
