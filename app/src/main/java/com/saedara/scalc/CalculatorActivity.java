@@ -3,6 +3,7 @@ package com.saedara.scalc;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
@@ -24,10 +25,16 @@ public class CalculatorActivity extends AppCompatActivity {
         operations.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                double operand1 = Double.parseDouble(((EditText)findViewById(R.id.op1EditText)).getText().toString());
-                double operand2 = Double.parseDouble(((EditText)findViewById(R.id.op2EditText)).getText().toString());
-                String operator = ((TextView)view).getText().toString();
-                ((TextView)findViewById(R.id.resultTextView)).setText(operand1 + " " + operator + " " + operand2);
+                String op1 = ((EditText)findViewById(R.id.op1EditText)).getText().toString();
+                String op2 = ((EditText)findViewById(R.id.op2EditText)).getText().toString();
+                if (op1.length() > 0 && op2.length() > 0) {
+                    double operand2 = Double.parseDouble(op2);
+                    double operand1 = Double.parseDouble(op1);
+                    String operator = ((TextView)view).getText().toString();
+                    ((TextView)findViewById(R.id.resultTextView)).setText(String.format("%s %s %s", operand1, operator, operand2));
+                } else {
+                    ((TextView)findViewById(R.id.resultTextView)).setText(R.string.OPERAND_EMPTY);
+                }
             }
         });
     }

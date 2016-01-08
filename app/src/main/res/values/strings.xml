@@ -10,4 +10,5 @@
     <string name="operand2">Operand2</string>
     <string name="menuCalcButton">Calculator</string>
     <string name="menuDisplayMsgBtn">Display Message</string>
+    <string name="OPERAND_EMPTY">Operands can not be empty</string>
 </resources>
