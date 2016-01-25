@@ -23,7 +23,7 @@ public class OperatorsAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return 4;
+        return operators.length;
     }
 
     @Override
